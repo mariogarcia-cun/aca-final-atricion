@@ -21,7 +21,7 @@ col1, col2 = st.columns(2)
 with col1:
     overtime = st.selectbox("Realiza horas extra", options=[0, 1],
                             format_func=lambda x: "Si" if x == 1 else "No")
-    total_working_years = st.slider("Anos de experiencia total", 0, 40, 5)
+    total_working_years = st.slider("Años de experiencia total", 0, 40, 5)
     job_level = st.selectbox("Nivel jerarquico", options=[1, 2, 3, 4, 5],
                              format_func=lambda x: {1:"1 - Junior", 2:"2 - Semi-senior",
                              3:"3 - Senior", 4:"4 - Gerencia", 5:"5 - Alta Direccion"}[x])
@@ -38,8 +38,8 @@ with col2:
     work_life_balance = st.selectbox("Balance vida-trabajo", options=[1,2,3,4],
                                      format_func=lambda x: {1:"1 - Malo", 2:"2 - Regular",
                                      3:"3 - Bueno", 4:"4 - Excelente"}[x])
-    years_at_company = st.slider("Anos en la empresa", 0, 40, 3)
-    years_with_manager = st.slider("Anos con el jefe actual", 0, 20, 2)
+    years_at_company = st.slider("Años en la empresa", 0, 40, 3)
+    years_with_manager = st.slider("Años con el jefe actual", 0, 20, 2)
 
 st.divider()
 
